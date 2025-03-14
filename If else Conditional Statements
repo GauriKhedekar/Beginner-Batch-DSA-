@@ -1,11 +1,11 @@
 1) Even or Odd(Link:-https://platform.bosscoderacademy.com/editor/even_odd)
-*Check whether the given number N is even or odd. Return true if it is even else false.
+/*Check whether the given number N is even or odd. Return true if it is even else false.
 *Input 1: N = 4
 Output 1: true
-Explanation 1: 4 is an even number.
+*Explanation 1: 4 is an even number.
 *Constraints:
 1<=N<=10000
-***Code****:-
+***Code****:-*/
 public class codefile{
     static boolean check(int n){
 	if(n % 2 == 0) return true;
