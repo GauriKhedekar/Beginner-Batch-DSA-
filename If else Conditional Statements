@@ -13,4 +13,64 @@ public class codefile{
     }
 }
 *************************************************************************************************
-
+2)Leap Year(https://platform.bosscoderacademy.com/editor/leap_year)
+/*You are given a number that represents the year, your task is to return true if the given year is a Leap Year or else false.
+*Input 1: year = 2000
+Output 1: true
+*Explanation 1: 2000 is a leap year.
+*Constraints:
+1700<=year<=9000
+***Code***:-*/
+public class codefile{
+    static boolean check(int year){
+	if(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) return true;
+    /*A leap year should be divisible by 4 and 400(for century years as century years(like 4000) are leap years
+    only if they are divisible by 400) and sould not be divisible by 100(for century years as 
+    century years like 1900 is not a leap year)
+    */
+    else return false;
+    }
+}
+****************************************************************************************************
+3) Maximum Integer(https://platform.bosscoderacademy.com/editor/maximum_integer)
+/*Find maximum among given two integers.
+*Input: a=2, b=4
+Output: 4
+*Constraints:
+1 <= a, b <= 104
+***Code***:-*/
+public class codefile{
+    static int solve(int a,int b){
+		if(a > b) return a;
+        else return b;
+    }
+}
+******************************************************************************************************
+4)Check Positive(https://platform.bosscoderacademy.com/editor/check_positive)
+/*Check whether the given number is positive or not.
+*Input: N = 7
+Output: true
+*Constraints:
+-104 <= N <= 104
+***Code***:_*/
+public class codefile{
+    static boolean check(int n){
+	 if(n > 0) return true;
+     else return false;//as 0 is neither positive nor negative so havent written edge case for it as there will not true and false answer for it.
+    }
+}
+******************************************************************************************************
+5)Multiple of Three(https://platform.bosscoderacademy.com/editor/multiple_of_three)
+/*Check whether the given number is multiple of 3 or not.
+*Input: N = 9
+Output: true
+*Constraints:
+-104 <= N <= 104
+***Code***:-*/
+public class codefile{
+    static boolean check(int n){
+		if(n % 3 == 0) return true;
+        else return false;
+    }
+}
+**********************************************************************************************************
